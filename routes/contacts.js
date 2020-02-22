@@ -93,7 +93,7 @@ router.put('/:id', auth, async (req, res) => {
     let contact = await Contacts.findById(req.params.id);
 
     if (!contact) {
-      return res.json({ msg: 'User Not Found' });
+      return res.json({ msg: 'Contact Not Found' });
     }
 
     // Make sure user owns a contact

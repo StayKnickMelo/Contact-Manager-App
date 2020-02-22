@@ -7,9 +7,9 @@ const app = express();
 connectDB();
 
 // Init Middleware
-app.use(express.json({extend: false}));
+app.use(express.json({ extend: false }));
 
-app.get('/', (req, res)=> res.json({msg: 'Welcome To The Contact Keeper API'}));
+app.get('/', (req, res) => res.json({ msg: 'Welcome To The Contact Keeper API' }));
 
 // Define Routes
 app.use('/api/users', require('./routes/users'));
@@ -18,4 +18,4 @@ app.use('/api/contacts', require('./routes/contacts'));
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, ()=> console.log(`server started on port ${PORT}`))
+app.listen(PORT, () => console.log(`server started on port ${PORT}`))
