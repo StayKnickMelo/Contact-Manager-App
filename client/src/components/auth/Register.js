@@ -75,7 +75,7 @@ const Register = (props) => {
       <h2 className="text-center">Register a New <span className="text-primary">User</span> </h2>
       <label htmlFor="name">Name</label>
       <input className={errorInput && 'error'} onChange={onChange} value={name} type="text" name="name" placeholder={errorInput && 'Enter Name'} />
-      <label htmlFor="email">Emal</label>
+      <label htmlFor="email">Email</label>
       <input className={errorInput && 'error'} onChange={onChange} value={email} type="email" name="email" placeholder={errorInput && 'Enter Email'} />
       <label htmlFor="password">Password</label>
       <input className={errorInput && 'error'} onChange={onChange} value={password} type="password" name="password" placeholder={errorInput && 'Enter Password'} minLength='6' />
