@@ -32,7 +32,6 @@ const AlertState = (props)=> {
       payload: {msg, type}
     });
 
-    console.log({msg, type})
 
     
     setTimeout(()=> {
