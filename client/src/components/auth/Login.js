@@ -48,8 +48,10 @@ const Login = (props) => {
       setAlert('Fill in the fileds', 'danger')
     } else {
 
-      logIn(user)
-
+      logIn({
+        email: email.toLowerCase(),
+        password
+      })
     }
 
     setUser({
